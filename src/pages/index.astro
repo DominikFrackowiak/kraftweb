@@ -30,7 +30,7 @@ import Layout from '../layouts/Layout.astro'
 			countValue -= 1
 			if (span && countValue > 0) span.textContent = countValue.toString()
 			if (countValue === 0)
-				window.location.href = `https://dominikfrackowiak.com/${locale}`
+				window.location.href = locale?`https://dominikfrackowiak.com/${locale}`:'https://dominikfrackowiak.com'
 		}, 1000)
 	}
 
